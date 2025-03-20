@@ -15,7 +15,7 @@ st.set_page_config(
 def load_data(file_path="day.csv"):
     """Load and preprocess the bicycle rental data"""
     df = pd.read_csv(file_path)
-    return df
+    
     
     # Mengganti nama kolom untuk lebih deskriptif
     column_mapping = {
