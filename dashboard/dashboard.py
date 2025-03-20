@@ -12,7 +12,7 @@ st.set_page_config(
 )
 
 @st.cache_data
-def load_data(file_path="day.csv"):
+def load_data(file_path):
     """Load and preprocess the bicycle rental data"""
     df = pd.read_csv(file_path)
     
