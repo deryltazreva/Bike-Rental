@@ -13,9 +13,9 @@ st.set_page_config(
 
 # Fungsi untuk memuat dan membersihkan data
 @st.cache_data
-def load_data(dashboard/day.csv):
+def load_data():
     """Load and preprocess the bicycle rental data"""
-    df = pd.read_csv(dashboard/day.csv)
+    df = pd.read_csv("dashboard/day.csv")
     
     # Mengganti nama kolom untuk lebih deskriptif
     column_mapping = {
