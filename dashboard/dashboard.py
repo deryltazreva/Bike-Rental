@@ -11,11 +11,11 @@ st.set_page_config(
     layout="wide"
 )
 
-# Fungsi untuk memuat dan membersihkan data
 @st.cache_data
-def load_data(file_path):
+def load_data():
     """Load and preprocess the bicycle rental data"""
-    df = pd.read_csv(file_path)
+    df = pd.read_csv("day.csv")  # Tanpa folder dashboard/
+    return df  # Jangan lupa mengembalikan dataframe
     
     # Mengganti nama kolom untuk lebih deskriptif
     column_mapping = {
